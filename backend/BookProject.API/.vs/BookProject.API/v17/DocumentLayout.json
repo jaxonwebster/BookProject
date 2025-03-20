@@ -3,16 +3,12 @@
   "WorkspaceRootPath": "C:\\Users\\jaxon\\OneDrive\\Desktop\\BookProject\\backend\\BookProject.API\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{265D90EB-5AE5-454C-AAF7-0BEB5C5B1B76}|BookProject.API.csproj|c:\\users\\jaxon\\onedrive\\desktop\\bookproject\\backend\\bookproject.api\\data\\project.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{265D90EB-5AE5-454C-AAF7-0BEB5C5B1B76}|BookProject.API.csproj|solutionrelative:data\\project.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{265D90EB-5AE5-454C-AAF7-0BEB5C5B1B76}|BookProject.API.csproj|c:\\users\\jaxon\\onedrive\\desktop\\bookproject\\backend\\bookproject.api\\controllers\\bookcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{265D90EB-5AE5-454C-AAF7-0BEB5C5B1B76}|BookProject.API.csproj|solutionrelative:controllers\\bookcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{265D90EB-5AE5-454C-AAF7-0BEB5C5B1B76}|BookProject.API.csproj|c:\\users\\jaxon\\onedrive\\desktop\\bookproject\\backend\\bookproject.api\\controllers\\weatherforecastcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{265D90EB-5AE5-454C-AAF7-0BEB5C5B1B76}|BookProject.API.csproj|solutionrelative:controllers\\weatherforecastcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{265D90EB-5AE5-454C-AAF7-0BEB5C5B1B76}|BookProject.API.csproj|c:\\users\\jaxon\\onedrive\\desktop\\bookproject\\backend\\bookproject.api\\data\\project.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{265D90EB-5AE5-454C-AAF7-0BEB5C5B1B76}|BookProject.API.csproj|solutionrelative:data\\project.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{265D90EB-5AE5-454C-AAF7-0BEB5C5B1B76}|BookProject.API.csproj|c:\\users\\jaxon\\onedrive\\desktop\\bookproject\\backend\\bookproject.api\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -44,21 +40,25 @@
           "SelectedChildIndex": 1,
           "Children": [
             {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{1c4feeaa-4718-4aa9-859d-94ce25d182ba}"
+            },
+            {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 0,
               "Title": "BookController.cs",
               "DocumentMoniker": "C:\\Users\\jaxon\\OneDrive\\Desktop\\BookProject\\backend\\BookProject.API\\Controllers\\BookController.cs",
               "RelativeDocumentMoniker": "Controllers\\BookController.cs",
               "ToolTip": "C:\\Users\\jaxon\\OneDrive\\Desktop\\BookProject\\backend\\BookProject.API\\Controllers\\BookController.cs",
               "RelativeToolTip": "Controllers\\BookController.cs",
-              "ViewState": "AgIAAAMAAAAAAAAAAAAAAA4AAAAaAAAAAAAAAA==",
+              "ViewState": "AgIAAAkAAAAAAAAAAAAAAA8AAAAJAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-03-19T00:30:25.018Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 1,
               "Title": "Project.cs",
               "DocumentMoniker": "C:\\Users\\jaxon\\OneDrive\\Desktop\\BookProject\\backend\\BookProject.API\\Data\\Project.cs",
               "RelativeDocumentMoniker": "Data\\Project.cs",
@@ -66,12 +66,11 @@
               "RelativeToolTip": "Data\\Project.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAABMAAAAZAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-19T00:10:07.474Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-03-19T00:10:07.474Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 2,
               "Title": "Program.cs",
               "DocumentMoniker": "C:\\Users\\jaxon\\OneDrive\\Desktop\\BookProject\\backend\\BookProject.API\\Program.cs",
               "RelativeDocumentMoniker": "Program.cs",
@@ -79,25 +78,11 @@
               "RelativeToolTip": "Program.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAB0AAAAXAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-19T00:23:13.745Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-03-19T00:23:13.745Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "WeatherForecastController.cs",
-              "DocumentMoniker": "C:\\Users\\jaxon\\OneDrive\\Desktop\\BookProject\\backend\\BookProject.API\\Controllers\\WeatherForecastController.cs",
-              "RelativeDocumentMoniker": "Controllers\\WeatherForecastController.cs",
-              "ToolTip": "C:\\Users\\jaxon\\OneDrive\\Desktop\\BookProject\\backend\\BookProject.API\\Controllers\\WeatherForecastController.cs",
-              "RelativeToolTip": "Controllers\\WeatherForecastController.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-19T14:05:47.39Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 3,
               "Title": "BookDbContext.cs",
               "DocumentMoniker": "C:\\Users\\jaxon\\OneDrive\\Desktop\\BookProject\\backend\\BookProject.API\\Data\\BookDbContext.cs",
               "RelativeDocumentMoniker": "Data\\BookDbContext.cs",
@@ -105,29 +90,23 @@
               "RelativeToolTip": "Data\\BookDbContext.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-19T00:17:19.058Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-03-19T00:17:19.058Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
-              "Title": "BookProject.API",
+              "DocumentIndex": 6,
+              "Title": "BookProject.API.csproj",
               "DocumentMoniker": "C:\\Users\\jaxon\\OneDrive\\Desktop\\BookProject\\backend\\BookProject.API\\BookProject.API.csproj",
               "RelativeDocumentMoniker": "BookProject.API.csproj",
               "ToolTip": "C:\\Users\\jaxon\\OneDrive\\Desktop\\BookProject\\backend\\BookProject.API\\BookProject.API.csproj",
               "RelativeToolTip": "BookProject.API.csproj",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
-              "WhenOpened": "2025-03-19T00:09:41.367Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Bookmark",
-              "Name": "ST:0:0:{1c4feeaa-4718-4aa9-859d-94ce25d182ba}"
+              "WhenOpened": "2025-03-19T00:09:41.367Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 5,
               "Title": "secrets.json",
               "DocumentMoniker": "C:\\Users\\jaxon\\AppData\\Roaming\\Microsoft\\UserSecrets\\3fcd3d15-34c3-4c3f-a6cc-485dee687e9d\\secrets.json",
               "RelativeDocumentMoniker": "..\\..\\..\\..\\..\\AppData\\Roaming\\Microsoft\\UserSecrets\\3fcd3d15-34c3-4c3f-a6cc-485dee687e9d\\secrets.json",
@@ -135,12 +114,11 @@
               "RelativeToolTip": "..\\..\\..\\..\\..\\AppData\\Roaming\\Microsoft\\UserSecrets\\3fcd3d15-34c3-4c3f-a6cc-485dee687e9d\\secrets.json",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
-              "WhenOpened": "2025-03-19T00:09:42.913Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-03-19T00:09:42.913Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 4,
               "Title": "appsettings.json",
               "DocumentMoniker": "C:\\Users\\jaxon\\OneDrive\\Desktop\\BookProject\\backend\\BookProject.API\\appsettings.json",
               "RelativeDocumentMoniker": "appsettings.json",
@@ -148,8 +126,7 @@
               "RelativeToolTip": "appsettings.json",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAFAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
-              "WhenOpened": "2025-03-19T00:07:23.945Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-03-19T00:07:23.945Z"
             }
           ]
         }

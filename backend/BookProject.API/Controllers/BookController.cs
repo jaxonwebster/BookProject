@@ -4,7 +4,7 @@ using Microsoft.AspNetCore.Mvc;
 
 namespace BookProject.API.Controllers
 {
-    [Route("a[controller]")]
+    [Route("[controller]")]
     [ApiController]
     public class BookController : ControllerBase
     {
@@ -12,11 +12,21 @@ namespace BookProject.API.Controllers
         public BookController(BookDbContext temp) => _bookContext = temp;
 
         [HttpGet("AllProjects")]
-        public IEnumerable<Project> GetProjects()
+        public IActionResult GetProjects(int pageHowMany = 10, int pageNum = 1)
         {
-            var something = _bookContext.Books.ToList();
-            return something;
+            var something = _bookContext.Books.ToList()
+                .Skip((pageNum-1) * pageHowMany)
+                .Take(pageHowMany);
+
+            var totalNumProjects = _bookContext.Books.Count();
+            return Ok(new
+            {
+                Projects = something,
+                TotalNumProjects = totalNumProjects
+               });
+                
         }
+
         [HttpGet("FunctionalProjects")]
         public IEnumerable<Project> GetFunctionalProjects()
         {
