@@ -1,4 +1,5 @@
 export interface Project {
+    projectId: any;
     bookID: number;
     title: string;
     author: string;

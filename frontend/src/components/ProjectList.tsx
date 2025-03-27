@@ -1,24 +1,30 @@
 import { useEffect, useState } from "react";
-import { Project } from "./types/Project";
+import { Project } from "../types/Project";
+import { useNavigate } from "react-router-dom";
 
-function ProjectList() {
+function ProjectList({ selectedCategories }: { selectedCategories: string[] }) {
     const [projects, setProjects] = useState<Project[]>([]);
     const [pageSize, setPageSize] = useState<number>(10);
     const [pageNum, setPageNum] = useState<number>(1);
     const [totalItems, setTotalItems] = useState<number>(0);
     const [totalPages, setTotalPages] = useState<number>(0);
     const [sortOrder, setSortOrder] = useState<"asc" | "desc">("asc");
+    const navigate = useNavigate();
 
     useEffect(() => {
         const fetchProjects = async () => {
-            const response = await fetch(`http://localhost:5241/Book/AllProjects?pageHowMany=${pageSize}&pageNum=${pageNum}`);
+            const categoryParams = selectedCategories
+                .map((cat) => `projectTypes=${encodeURIComponent(cat)}`)
+                .join('&');
+
+            const response = await fetch(`http://localhost:5241/Book/AllProjects?pageHowMany=${pageSize}&pageNum=${pageNum}${selectedCategories.length ? `&${categoryParams}` : ''}`);
             const data = await response.json();
             setProjects(data.projects);
             setTotalItems(data.totalNumProjects);
             setTotalPages(Math.ceil(data.totalNumProjects / pageSize));
         };
         fetchProjects();
-    }, [pageSize, pageNum]);
+    }, [pageSize, pageNum, totalItems, selectedCategories]);
 
     const sortedProjects = [...projects].sort((a, b) => {
         return sortOrder === "asc" ? a.title.localeCompare(b.title) : b.title.localeCompare(a.title);
@@ -26,7 +32,12 @@ function ProjectList() {
 
     return (
         <>
-            <h1>Book Projects</h1>
+            {/* Hero Section with Background Color */}
+            <div className="hero-section p-5 text-white" style={{ backgroundColor: '#007bff' }}>
+                <h1>Welcome to Our Project List</h1>
+                <p>Explore the latest and most exciting projects available in our library. Sort, filter, and add to cart!</p>
+            </div>
+
             <button onClick={() => setSortOrder(sortOrder === "asc" ? "desc" : "asc")}>
                 Sort by Name ({sortOrder === "asc" ? "Ascending" : "Descending"})
             </button>
@@ -44,6 +55,11 @@ function ProjectList() {
                             <li><strong>Page Count: </strong>{p.pageCount}</li>
                             <li><strong>Price: </strong>${p.price}</li>
                         </ul>
+                        <button className="btn btn-success"
+                            onClick={() => navigate(`/cart/${p.title}/${p.projectId}`)}
+                        >
+                            Add To Cart
+                        </button>
                     </div>
                 </div>
             ))}
@@ -57,7 +73,7 @@ function ProjectList() {
             <br /><br />
             <label>
                 Results per page:
-                <select 
+                <select
                     value={pageSize}
                     onChange={(p) => {
                         setPageSize(Number(p.target.value));
